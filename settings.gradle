@@ -1,0 +1,2 @@
+rootProject.name='GradientPolyline'
+include ':app'
