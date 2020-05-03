@@ -5,11 +5,11 @@
 
 <img src="https://github.com/ahmedadeltito/GradientPolyline/blob/master/art/gradient_polyline.gif"/>
 
-# Case Study  
+## Case Study  
 
 If you want to create a gradient polyline between two locations on Andoird Google Maps, you won't be able since it is not a built-in API in Android Google Maps SDK according to this [stackoverflow](https://stackoverflow.com/a/43758358/6264095) comment. That makes me try if I could make it natively or it would be something hard to implement. And I found that - in 6 hours - it could be something double and you just need to think about it in an out-of-the-box mindset and give it a try.
 
-# How `GradientPolyLine` class is created ? 
+## How `GradientPolyLine` class is created ? 
 
 Since we are going to implement the function that creates the gradient color by ourselves, so we should know how the gradient color is created programmatically.
 
@@ -91,13 +91,13 @@ Finally, we can now add all the `PolylineOptions` we have in the `gradientPoly` 
         onDrawFinished()
     }
 
-# Application architecture and structure: 
+## Application architecture and structure: 
 
 It is a single module project architecture. And, I'm following the **Clean Architecture** as a Software Architecture Pattern and  **MVVM** as a Presentation Layer Pattern.
 
 The architecture is inspired by the [LiveDataSample](https://github.com/android/architecture-components-samples/tree/master/LiveDataSample) from the android component simples.
 
-# Third-party used: 
+## Third-party used: 
 
 I was trying to use the things that make the development process much easier and faster to be focused more on the desired from the use case which is creating a gradient polyline.
 
