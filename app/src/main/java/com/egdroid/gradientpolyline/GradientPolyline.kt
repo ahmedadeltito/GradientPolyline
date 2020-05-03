@@ -122,7 +122,7 @@ class GradientPolyLine(
             val simplifiedListSize = simplifiedList.size.toFloat()
 
             /**
-             * Calculate the new colors for building the gradient color.
+             * Calculate the steps for each RGB color.
              */
             val redSteps = (endRed - startRed).toFloat() / 255 / simplifiedListSize
             val greenSteps = (endGreen - startGreen).toFloat() / 255 / simplifiedListSize
@@ -140,8 +140,9 @@ class GradientPolyLine(
 
                 /**
                  * Generate the RGB colors for gradient by getting each start RGB color and
-                 * divided them. Then getting the result plus it to the multiplication of the
-                 * RGB step colors with the for loop index of the simplifiedList.
+                 * dividing them by 255. Then getting the result and plus it to
+                 * the multiplication of the RGB step colors with the for loop index of
+                 * the simplifiedList.
                  */
                 val redGradientColor = (startRed.toFloat() / 255) + (redSteps * index)
                 val greenGradientColor = (startGreen.toFloat() / 255) + (greenSteps * index)
@@ -150,7 +151,7 @@ class GradientPolyLine(
                 /**
                  * Then generate the full color.
                  */
-                val color = getRGBColor(
+                val gradientColor = getRGBColor(
                     red = redGradientColor,
                     green = greenGradientColor,
                     blue = blueGradientColor
@@ -161,7 +162,7 @@ class GradientPolyLine(
                  */
                 gradientPoly.add(
                     copyPolylineOptions(polylineOptions)
-                        .color(color)
+                        .color(gradientColor)
                         .add(simplifiedList[index])
                         .add(simplifiedList[index + 1])
                 )
@@ -174,8 +175,8 @@ class GradientPolyLine(
              */
             withContext(Dispatchers.Main) {
                 setZoomingOnMap(false)
-                gradientPoly.forEach { polylineOptions ->
-                    map.addPolyline(polylineOptions)
+                gradientPoly.forEach { polylineOption ->
+                    map.addPolyline(polylineOption)
                     delay(delayTime)
                 }
                 setZoomingOnMap(true)
