@@ -46,6 +46,3 @@ object GradientRouteVMFactory : ViewModelProvider.Factory {
     }
 
 }
-
-
-
