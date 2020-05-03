@@ -122,7 +122,7 @@ class GradientPolyLine(
             val simplifiedListSize = simplifiedList.size.toFloat()
 
             /**
-             * Extract the RGD colors from the [startColor]
+             * Calculate the new colors for building the gradient color.
              */
             val redSteps = (endRed - startRed).toFloat() / 255 / simplifiedListSize
             val greenSteps = (endGreen - startGreen).toFloat() / 255 / simplifiedListSize
