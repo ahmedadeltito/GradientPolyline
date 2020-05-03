@@ -1,7 +1,7 @@
 
 # Gradient Polyline  
 
-> A use case for creating a gradient polyline on Google Maps on Android natively. Since it is not a built-in API in Google Maps Android SDK.
+> A use case for creating a gradient polyline on Google Maps in Android natively. Since it is not a built-in API in Google Maps Android SDK.
 
 <img src="https://github.com/ahmedadeltito/GradientPolyline/blob/master/art/gradient_polyline.gif"/>
 
