@@ -103,7 +103,7 @@ I was trying to use the things that make the development process much easier and
 
 - [Coroutines](https://developer.android.com/kotlin/coroutines) for handling the background operations like reading the JSON from a file, parsing it, and looping all over the coordinates to fill the `gradientPoly` with `PolylineOptions` with its gradient color.
 - [Moshi](https://github.com/square/moshi/) for parsing the JSON from `route.json` file and start working on the Cairo/Alexandria route.
-- [Android Maps Utils](https://github.com/googlemaps/android-maps-utils) for Simplifies the given coordinate list using the Douglas-Peucker decimation algorithm.
+- [Android Maps Utils](https://github.com/googlemaps/android-maps-utils) for simplifies the given coordinate list using the Douglas-Peucker decimation algorithm.
 - [KTX dependencies](https://developer.android.com/topic/libraries/architecture/coroutines) for making the implementation between Coroutines and MVVM much easier.
 
 
