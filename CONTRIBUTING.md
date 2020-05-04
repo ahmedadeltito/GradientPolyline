@@ -1,6 +1,6 @@
 # Contributor Guidelines
 
-We welcome contributions from other developers to help us make the SDK even better.
+We welcome contributions from other developers to help us make the project even better.
 Before you contribute there are a number of things that you should know.
 
 Firstly, please familiarise yourself with the [Github Contribution flow](https://guides.github.com/introduction/flow/).
